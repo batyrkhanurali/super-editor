@@ -1818,7 +1818,7 @@ class SuperEditorIosHandlesDocumentLayerBuilder implements SuperEditorLayerBuild
       },
       handleColor: handleColor ??
           SuperEditorIosControlsScope.maybeRootOf(context)?.handleColor ??
-          Theme.of(context).primaryColor,
+          Theme.of(context).colorScheme.secondary,
       shouldCaretBlink: SuperEditorIosControlsScope.rootOf(context).shouldCaretBlink,
       floatingCursorController: SuperEditorIosControlsScope.rootOf(context).floatingCursorController,
     );
